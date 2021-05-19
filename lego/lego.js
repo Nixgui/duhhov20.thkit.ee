@@ -1,3 +1,4 @@
+//Тело лего-человека
 function lego_body()
 {
 	let canvas = document.getElementById("plate");
@@ -17,7 +18,7 @@ function lego_body()
 		ctx.stroke();
 	}
 }
-
+//Голова лего-человека
 function lego_head()
 {
 	let canvas = document.getElementById("plate");
@@ -57,7 +58,7 @@ function lego_head()
 		ctx.stroke();
 	}
 }
-
+//Левая рука
 function left_hand()
 {
 	let canvas = document.getElementById("plate");
@@ -85,7 +86,7 @@ function left_hand()
 		left_hand_shadow();
 	}
 }
-
+//Крюк левой руки
 function left_hand_hook()
 {
 	let canvas = document.getElementById("plate");
@@ -123,7 +124,7 @@ function left_hand_hook()
 		ctx.stroke();
 	}
 }
-
+//Правая рука
 function right_hand()
 {
 	let canvas = document.getElementById("plate");
@@ -149,7 +150,7 @@ function right_hand()
 
 	}
 }
-
+//Крюк правой руки
 function right_hand_hook()
 {
 	let canvas = document.getElementById("plate");
@@ -188,7 +189,7 @@ function right_hand_hook()
 		ctx.stroke();
 	}
 }
-
+//Левая нога
 function left_leg()
 {
 	let canvas = document.getElementById("plate");
@@ -214,7 +215,7 @@ function left_leg()
 	}
 
 }
-
+//Правая нога
 function right_leg()
 {
 	let canvas = document.getElementById("plate");
@@ -239,7 +240,7 @@ function right_leg()
 		ctx.stroke();
 	}
 }
-
+//Тень на крюке с левой строны
 function left_hand_shadow()
 {
 	let canvas = document.getElementById("plate");
@@ -263,7 +264,7 @@ function left_hand_shadow()
 		ctx.stroke();
 	}
 }
-
+//Тень на крюке с правой строны
 function right_hand_shadow()
 {
 	let canvas = document.getElementById("plate");
@@ -288,7 +289,7 @@ function right_hand_shadow()
 		ctx.stroke();
 	}
 }
-
+//Пояс/Ремень
 function belt()
 {
 	let canvas = document.getElementById("plate");
@@ -311,7 +312,7 @@ function belt()
 		ctx.stroke();
 	}
 }
-
+//Очистить холст
 function clear_all()
 {
 	let canvas = document.getElementById("plate");
@@ -324,25 +325,21 @@ function clear_all()
 		ctx.restore();
 	}
 }
-
+//Лицо лего-человека
 function lego_face()
 {
 	let canvas = document.getElementById("plate");
 	if(canvas.getContext)
 	{
 		let ctx = canvas.getContext("2d");
-		/*ctx.beginPath();
-		ctx.arc(201,75,40,0,Math.Pi*2,true);
-
-		ctx.stroke();*/
 		ctx.beginPath();
-		ctx.arc(201,75,40,0,Math.PI*2,true); // Внешняя окружность
+		ctx.arc(201,75,40,0,Math.PI*2,true);
 		ctx.moveTo(225,75);
-		ctx.arc(200,75,25,0,Math.PI,false);  // рот (по часовой стрелке)
+		ctx.arc(200,75,25,0,Math.PI,false);
 		ctx.moveTo(190,65);
-		ctx.arc(186,68,5,0,Math.PI*2,true);  // Левый глаз
+		ctx.arc(186,68,5,0,Math.PI*2,true);
 		ctx.moveTo(218,65);
-		ctx.arc(214,68,5,0,Math.PI*2,true);  // Правый глаз
+		ctx.arc(214,68,5,0,Math.PI*2,true);
 		ctx.stroke();
 	}
 }

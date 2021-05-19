@@ -16,7 +16,7 @@ function lego_body()
 		ctx.fill();
 		ctx.stroke();
 	}
-};
+}
 
 function lego_head()
 {
@@ -56,7 +56,7 @@ function lego_head()
 		ctx.fill();
 		ctx.stroke();
 	}
-};
+}
 
 function left_hand()
 {
@@ -84,7 +84,7 @@ function left_hand()
 		left_hand_hook();
 		left_hand_shadow();
 	}
-};
+}
 
 function left_hand_hook()
 {
@@ -95,7 +95,7 @@ function left_hand_hook()
 		ctx.beginPath();
 		ctx.moveTo(110,217);
 		ctx.lineWidth = "1";
-		ctx.fillStyle = "yellow";
+		ctx.fillStyle = "#FFFB00";
 		ctx.lineTo(110,224);
 		ctx.lineTo(105,225);
 		ctx.lineTo(101,228);
@@ -122,7 +122,7 @@ function left_hand_hook()
 		ctx.fill();
 		ctx.stroke();
 	}
-};
+}
 
 function right_hand()
 {
@@ -148,7 +148,7 @@ function right_hand()
 		right_hand_shadow();
 
 	}
-};
+}
 
 function right_hand_hook()
 {
@@ -159,7 +159,7 @@ function right_hand_hook()
 		ctx.beginPath();
 		ctx.moveTo(290,217);
 		ctx.lineWidth = "1";
-		ctx.fillStyle = "yellow";
+		ctx.fillStyle = "#FFFB00";
 		ctx.lineTo(291,224);
 		ctx.lineTo(298,226);
 		ctx.lineTo(306,234);
@@ -187,7 +187,7 @@ function right_hand_hook()
 		ctx.fill();
 		ctx.stroke();
 	}
-};
+}
 
 function left_leg()
 {
@@ -198,7 +198,7 @@ function left_leg()
 		ctx.beginPath();
 		ctx.moveTo(136,240);
 		ctx.lineWidth = "1";
-		ctx.fillStyle = "blue";
+		ctx.fillStyle = "#0046FF";
 		ctx.lineTo(136,315);
 		ctx.lineTo(137,315);
 		ctx.lineTo(137,357);
@@ -213,7 +213,7 @@ function left_leg()
 		ctx.stroke();
 	}
 
-};
+}
 
 function right_leg()
 {
@@ -224,7 +224,7 @@ function right_leg()
 		ctx.beginPath();
 		ctx.moveTo(265,239);
 		ctx.lineWidth = "1";
-		ctx.fillStyle = "blue";
+		ctx.fillStyle = "#0046FF";
 		ctx.lineTo(265,315);
 		ctx.lineTo(264,315);
 		ctx.lineTo(264,357);
@@ -238,7 +238,7 @@ function right_leg()
 		ctx.fill();
 		ctx.stroke();
 	}
-};
+}
 
 function left_hand_shadow()
 {
@@ -249,7 +249,7 @@ function left_hand_shadow()
 		ctx.beginPath();
 		ctx.moveTo(103,250);
 		ctx.lineWidth = "1";
-		ctx.fillStyle = "yellow";
+		ctx.fillStyle = "#ECEBCB";
 		ctx.lineTo(109,241);
 		ctx.lineTo(117,239);
 		ctx.lineTo(125,242);
@@ -262,7 +262,7 @@ function left_hand_shadow()
 		ctx.fill();
 		ctx.stroke();
 	}
-};
+}
 
 function right_hand_shadow()
 {
@@ -273,7 +273,7 @@ function right_hand_shadow()
 		ctx.beginPath();
 		ctx.moveTo(277,240);
 		ctx.lineWidth = "1";
-		ctx.fillStyle = "yellow";
+		ctx.fillStyle = "#ECEBCB";
 		ctx.lineTo(283,233);
 		ctx.lineTo(288,231);
 		ctx.lineTo(294,233);
@@ -287,7 +287,7 @@ function right_hand_shadow()
 		ctx.fill();
 		ctx.stroke();
 	}
-};
+}
 
 function belt()
 {
@@ -298,7 +298,7 @@ function belt()
 		ctx.beginPath();
 		ctx.moveTo(136,240);
 		ctx.lineWidth = "1";
-		ctx.fillStyle = "blue";
+		ctx.fillStyle = "#45BFFF";
 		ctx.lineTo(265,239);
 		ctx.lineTo(265,257);
 		ctx.lineTo(207,257);
@@ -310,7 +310,7 @@ function belt()
 		ctx.fill();
 		ctx.stroke();
 	}
-};
+}
 
 function clear_all()
 {
@@ -323,4 +323,26 @@ function clear_all()
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		ctx.restore();
 	}
-};
+}
+
+function lego_face()
+{
+	let canvas = document.getElementById("plate");
+	if(canvas.getContext)
+	{
+		let ctx = canvas.getContext("2d");
+		/*ctx.beginPath();
+		ctx.arc(201,75,40,0,Math.Pi*2,true);
+
+		ctx.stroke();*/
+		ctx.beginPath();
+		ctx.arc(201,75,40,0,Math.PI*2,true); // Внешняя окружность
+		ctx.moveTo(225,75);
+		ctx.arc(200,75,25,0,Math.PI,false);  // рот (по часовой стрелке)
+		ctx.moveTo(190,65);
+		ctx.arc(186,68,5,0,Math.PI*2,true);  // Левый глаз
+		ctx.moveTo(218,65);
+		ctx.arc(214,68,5,0,Math.PI*2,true);  // Правый глаз
+		ctx.stroke();
+	}
+}

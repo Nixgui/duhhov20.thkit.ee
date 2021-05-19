@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Ruslan Koduleht</title>
   <link rel="stylesheet" href="../css/style.css">
+  <script src="../lego/lego.js"></script>
 </head>
 <body>
 <header>
@@ -21,7 +22,17 @@
 </nav>
 <main>
   <canvas id="plate" width="400" height="400" style="background-color:white"></canvas>
+  <br>
+  <input type="button" value="Body" id="lego_body" onclick="lego_body()"/>
+  <input type="button" value="Head" id="lego_head" onclick="lego_head()"/>
+  <input type="button" value="Left Hand" id="left_hand" onclick="left_hand()">
+  <input type="button" value="Right Hand" id="right_hand" onclick="right_hand()">
+  <input type="button" value="Left Leg" id="left_leg" onclick="left_leg()">
+  <input type="button" value="Right Leg" id="right_leg" onclick="right_leg()">
+  <input type="button" value="Belt" id="belt" onclick="belt()">
+  <input type="button" value="Clear All" id="clear_all" onclick="clear_all()">
 </main>
+
 <br>
 <a href="https://validator.w3.org/check?uri=referer"><img width="88" height="31" alt="W3C HTML5 certified" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png"></a>
 <a href="https://jigsaw.w3.org/css-validator/check/referer">

@@ -1,0 +1,162 @@
+/*Общее
+------------------------------------------*/
+body{
+  background-color: #808080;
+  width: 100%;
+
+}
+/*Шапка
+------------------------------------------*/
+header{
+  display: block; /* Для старых браузеров */
+  height: 170px; /* Высота шапки */
+  width: auto;
+  background: url(../img/header/head.jpg)  center bottom;
+  color: white;
+}
+
+header h1{
+  letter-spacing: 0.3cm;
+  font-size: 30px;
+  font-family: Verdana, serif;
+  text-align: center;
+}
+header h3{
+  letter-spacing: 0.1cm;
+  font-size: 20px;
+  font-family: Verdana, serif;
+  text-align: center;
+}
+/*Меню навигации
+-------------------------------------------*/
+nav ul li{
+  display: inline;
+  margin: 10px;
+  opacity: 0.8;
+  overflow: visible;
+  padding: 20px;
+}
+nav li a{
+  border-left: dashed  #708090;
+  border-bottom: dashed  #708090;
+  border-radius: 30px;
+  padding: 1%;
+  text-align: center;
+}
+nav{
+  margin-top: 40px;
+  margin-left: 350px;
+}
+
+/*Содержимое
+-------------------------------------------*/
+main {
+  background-color: #5d8aa8;
+  height: 500px;
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+.esimine, .teine, .kolmas {
+  position: absolute;
+  border: solid 1px;
+  background-color: lightgray;
+}
+.esimine{
+  width: 300px;
+  top: 7%;
+  left: 350px;
+  z-index: 1;
+}
+.teine{
+  width: 400px;
+  top: 7%;
+  left: 500px;
+  z-index: 3;
+}
+.kolmas{
+  width: 315px;
+  top: 16%;
+  left: 585px;
+  z-index: 2;
+}
+#pilt{
+  width: 150px;
+  height: 150px;
+}
+/*Подвал
+--------------------------------------------*/
+footer{
+  background-color: #999999;
+  color: white;
+  padding: 10px;
+}
+/*Lingid*/
+a:active, a:visited, a:link{
+  text-decoration: none;
+  color: red;
+}
+nav li a:hover{
+  text-decoration: underline;
+  background-color: green;
+}
+#p200x200{
+  width: 200px;
+  height: 200px;
+}
+#p1{
+  width: 50px;
+}
+#p2{
+  width: 50px;
+}
+#p3{
+  width: 50px;
+}
+#p4{
+  width: 50px;
+}
+#p5{
+  width: 50px;
+}
+#conteiner{
+  height: 100px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#p1:hover{
+  width: 50px;
+  transform: scale(1.20);
+}
+#p2:hover{
+  width: 50px;
+  transform: scale(1.20);
+}
+#p3:hover{
+  width: 50px;
+  transform: scale(1.20);
+}
+#p4:hover{
+  width: 50px;
+  transform: scale(1.20);
+}
+#p5:hover{
+  width: 50px;
+  transform: scale(1.20);
+}
+#ankeet td{
+  border: solid 0px black;
+}
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #5d8aa8;
+  border: solid 1px #5d8aa8;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}

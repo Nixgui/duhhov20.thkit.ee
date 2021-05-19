@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Vormid HTML keeles</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header>
+    <h1>Ruslan Duhhov koduleht</h1>
+    <h3>Noorem Tarkvaraarendaja Veebirakendus aluste tööd</h3>
+</header>
+<nav>
+    <ul>
+        <li><a href="../index.html">Avaleht</a></li>
+        <li><a href="lingid.html">Kasulikud lingid</a></li>
+        <li><a href="tood.html">HTML/CSS/JS tööd</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="ankeet.html">Kodutöö Ankeet</a> </li>
+    </ul>
+</nav>
+<br>
+<h1>Õppimise Ankeet</h1>
+<form name="ankeet">
+    <label for="nimi">Sisesta nimi:</label>
+    <input type="text" id="nimi" name="eesnimi" placeholder="Eesnimi max 6" maxlength="6">
+    <br>
+    <strong>Vali ryhm: </strong>
+    <br>
+    <input type="radio" id="TAR" name="ryhm" value="TARgv20" checked>
+    <label for="TAR">TARgv20</label>
+    <br>
+    <input type="radio" id="LOGIT" name="ryhm" value="LOGIT">
+    <label for="LOGIT">LOGIT ryhm</label>
+    <br>
+    <input type="radio" id="TIT" name="ryhm" value="TIT">
+    <label for="TIT">TIT ryhm</label>
+    <br>
+    <label for="essee">Arvamus õppimise kohta</label>
+    <br>
+    <textarea id="essee" cols="20" rows="5">Kirjuta siis oma arvamust...</textarea>
+    <br>
+    <strong>Vali oma lemmikaine: </strong>
+    <br>
+    <select id="ained">
+        <option value="vali">Vali...</option>
+        <option value="matemaatika">Matemaatika</option>
+        <option value="fuusika">Fuusika</option>
+        <option value="eesti_keel">Eesti keel</option>
+        <option value="keemia">Keemia</option>
+        <option value="andmebaasid">Andmebaasid</option>
+    </select>
+    <br>
+    <strong>Vali õiged vastused.</strong>
+    <br>
+    <label for="v1">HTML on programeerimise keel</label>
+    <input type="checkbox" id="v1" name="test" value="">
+    <br>
+    <label for="v2">HTML on struktuuri määramise keel</label>
+    <input type="checkbox" id="v2" name="test" value="" checked>
+    <br>
+    <label for="v3">CSS aitab teha veebilehe kujundust</label>
+    <input type="checkbox" id="v3" name="test" value="">
+    <br>
+    <br>
+    <input type="button" value="Salvesta" onclick="vormFunc()">
+    <br>
+    <div id="answer"></div>
+</form>
+<br>
+<a href="https://validator.w3.org/check?uri=referer"><img width="88" height="31" alt="W3C HTML5 certified" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png"></a>
+<a href="https://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+</a>
+<footer>
+    (c) 2021 Ruslan Duhhov TTHK
+</footer>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Vormid HTML keeles</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js" charset="utf-8"></script>
+</head>
+<body>
+<header>
+    <h1>Ruslan Duhhov koduleht</h1>
+    <h3>Noorem Tarkvaraarendaja Veebirakendus aluste tööd</h3>
+</header>
+<nav>
+    <ul>
+        <li><a href="../index.html">Avaleht</a></li>
+        <li><a href="lingid.html">Kasulikud lingid</a></li>
+        <li><a href="tood.html">HTML/CSS/JS tööd</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="ankeet.html">Kodutöö Ankeet</a> </li>
+    </ul>
+</nav>
+<br>
+<table id="ankeet">
+    <thead>
+        <tr>
+            <th colspan="2"><h1>Кибербезопасность</h1></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <!--Выбор одного вырианта-->
+            <td>1.Как вы относитесь к безопасности в сети?</td>
+            <td>
+                <br>
+                <input type="radio" id="polozitelno" name="cyber" value="Положительно">
+                <label for="polozitelno">Положительно</label>
+                <br>
+                <input type="radio" id="neitralno" name="cyber" value="Нейтрально">
+                <label for="neitralno">Нейтрально</label>
+                <br>
+                <input type="radio" id="otricatelno" name="cyber" value="Отрицательно">
+                <label for="otricatelno">Отрицательно</label>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <!--Есть возможно выбрать несколько вариантов-->
+            <td>2.Какую/какие ОС вы используете</td>
+            <td>
+                <br>
+                <label for="v1">Linux</label>
+                <input type="checkbox" id="v1" name="test" value="Linux">
+                <br>
+                <label for="v2">Windows</label>
+                <input type="checkbox" id="v2" name="test" value="Windows">
+                <br>
+                <label for="v3">MacOS</label>
+                <input type="checkbox" id="v3" name="test" value="MacOS">
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <!--Текстовой ящик для ввода текста-->
+            <td>3.Как вы защищаетесь в сети?</td>
+            <td>
+                <br>
+                <textarea id="sett" cols="20" rows="5">Напиши сюда своими словами...</textarea>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <!--Выбор ответа только ДА или НЕТ-->
+            <td>4.Знаете ли вы чсто такое VPN?</td>
+            <td>
+                <br>
+                <label for="vpnyes">Да</label>
+                <input type="radio" id="vpnyes" name="vpn" value="Yes">
+                <br>
+                <label for="vpnno">Нет</label>
+                <input type="radio" id="vpnno" name="vpn" value="No">
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <!--Выпадающее меню-->
+            <td>5.Какой антивирус вы используете?</td>
+            <td>
+                <br>
+                <select id="antivirus" name="antivirus">
+                     <option id="1">NOD32</option>
+                     <option id="2">Windows Defender</option>
+                     <option id="3">Avast</option>
+                     <option id="4">GRIZZLY</option>
+                 </select>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <!--Выбор только одного вырианта-->
+            <td>6.Какая операционная система больше подходит для безопасности?</td>
+            <td>
+                <br>
+                <label for="linux">Linux</label>
+                <input type="radio" id="linux" name="os" value="">
+                <br>
+                <label for="windows">Windows</label>
+                <input type="radio" id="windows" name="os" value="">
+                <br>
+                <label for="macos">MacOS</label>
+                <input type="radio" id="macos" name="os" value="">
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <!--Выбор только одного ответа-->
+            <td>7.Можно ли передавать пароль и логин 3-им лицам?</td>
+            <td>
+                <br>
+                <label for="yes">Да</label>
+                <input type="radio" id="yes" name="pass" value="">
+                <br>
+                <label for="no">Нет</label>
+                <input type="radio" id="no" name="pass" value="">
+                <br>
+                <label for="dontknow">Не знаю</label>
+                <input type="radio" id="dontknow" name="pass" value="">
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <!--Маленький текстовый ящик-->
+            <td>8.Введите ваше имя: </td>
+            <td>
+                <br>
+                <input type="text" id="name" name="yourname" placeholder="максимум 15 символов" maxlength="15">
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>Введите свой э - маил.</td>
+            <td>
+                <br>
+                <input type="email" id="e-mail">
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>Введите свой номер телефона</td>
+            <td>
+                <br>
+                <input type="tel" id="tel" pattern="+372" maxlength="12" placeholder="+372...">
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>Введите Цвет</td>
+            <td>
+                <br>
+                <input type="color" id="color">
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>Введите количество дверей в вашей квартире</td>
+            <td>
+                <br>
+                <input type="number" id="dver">
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" id="btn1" value="Tühjenda väljad" onclick="clear()"></td>
+            <td><input type="button" id="btn2" value="Salvesta" onclick="vormFunc()"></td>
+        </tr>
+        <tr>
+            <td><div id="answer"></div></td>
+
+        </tr>
+    </tbody>
+</table>
+<br>
+<a href="https://validator.w3.org/check?uri=referer"><img width="88" height="31" alt="W3C HTML5 certified" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png"></a>
+<a href="https://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+</a>
+<footer>
+    (c) 2021 Ruslan Duhhov TTHK
+</footer>
+</body>
+</html>

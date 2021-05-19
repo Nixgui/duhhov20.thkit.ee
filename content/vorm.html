@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Kasutaja vorm</title>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+<!-- header -->
+<header>
+    <h1>Kasutaja vorm</h1>
+</header>
+
+<!-- main -->
+<main>
+    <form action="#" method="POST" id="form">
+        <table>
+            <!-- row 1 -->
+            <tr>
+                <td><label for="nimi">Kasutajanimi:</label></td>
+                <td><input type="text" name="kasutajanimi" id="nimi" maxlength="6" size="20" placeholder="max pikkus 6"></td>
+            </tr>
+            <!-- row 2 -->
+            <tr>
+                <td><label for="kursus">Kursus:</label></td>
+                <td><input type="text" name="kursus" id="kursus" maxlength="3" size="20" placeholder="max pikkus 3">
+                </td>
+            </tr>
+
+            <!-- row 3 -->
+            <tr>
+                <td>Roll:</td>
+                <td>
+                    <input type="radio" name="roll" id="admin" value="Admin">
+                    <label for="admin">Admin</label> <br>
+                    <input type="radio" name="roll" id="moderaator" value="Moderaator">
+                    <label for="moderaator">Moderaator</label> <br>
+                    <input type="radio" name="roll" id="user" value="User" checked>
+                    <label for="user">User</label>
+                </td>
+            </tr>
+            <!-- row 4 -->
+            <tr>
+                <td><label for="agree">Nõustun tingimustega:</label></td>
+                <td><input type="checkbox" name="agree" id="agree"></td>
+            </tr>
+            <!-- row 5 -->
+            <tr>
+                <td><label for="textarea_comment">Enesetutvustus</label></td>
+                <td><textarea name="comment" id="textarea_comment" cols="20" rows="10" wrap="soft"></textarea></td>
+            </tr>
+            <!-- row 6 -->
+            <tr>
+                <td><input type="button" id="btn1" value="Tühjenda väljad" onclick="eemaldaValik()"></td>
+                <td><input type="button" id="btn2" value="Saada" onclick="tervitus()"></td>
+            </tr>
+            <!-- row 7 -->
+            <tr>
+                <td>
+                    <div id="answer"></div>
+                </td>
+                <td>
+                    <img src="../img/rolled/emty.png" id="emptyIMG" alt="EmtyImmage">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</main>
+
+
+</body>
+</html>

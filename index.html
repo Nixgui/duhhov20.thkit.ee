@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <title>Ruslan Koduleht</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    let showhide=true;
+    function hideOrShow(){
+      $('#jquery').slideToggle();
+      if(showhide){
+        showhide=false;
+        $('#hide_Or_Show').val("Hide")
+      }
+      else
+      {
+        showhide=false;
+        $('#hide_Or_Show').val("Show")
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Ruslan Duhhov koduleht</h1>
+    <h3>Noorem Tarkvaraarendaja Veebirakendus aluste tööd</h3>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Avaleht</a></li>
+      <li><a href="content/lingid.html">Kasulikud lingid</a></li>
+      <li><a href="content/tood.html">HTML/CSS/JS tööd</a></li>
+      <li><a href="content/kontakt.html">Kontakt</a></li>
+      <li><a href="content/ankeet.html">Kodutöö Ankeet</a></li>
+    </ul>
+  </nav>
+  <input type="button" value="Hide Or Show" id="hide_Or_Show" onclick="hideOrShow()">
+  <main id="jquery">
+    <section class="esimine">
+      <h3>Tere tulemast!</h3>
+      <img alt="Soba4ka" src="img/sob.jpg">
+    </section>
+    <section class="teine">
+      <h3>Olen TTHK õppilane, Hello World </h3>
+    </section>
+    <section class="kolmas">
+      <h3>Noorem Tarkvaraarendaja Kutseeksam</h3>
+      <p>Kutseeksam on EUCIP eksamite põhine eksam ja koosneb 3.osast(eksamist):</p>
+      <ol>
+        <li>Moodul A - IT juhtimine</li>
+        <li>Moodul B - Programeerimine, andmebaasid, Tarkvara arendamine, Veebirakendus</li>
+        <li>Moodul C light - IT haldus - riistvara, arvutivõrgud</li>
+      </ol>
+    </section>
+  </main>
+  <br>
+  <a href="https://validator.w3.org/check?uri=referer"><img width="88" height="31" alt="W3C HTML5 certified" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png"></a>
+  <a href="https://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+  </a>
+  <footer>
+    (c) 2021 Ruslan Duhhov TTHK
+  </footer>
+</body>
+</html>

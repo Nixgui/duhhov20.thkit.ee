@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>JQuery kasutamine</title>
+  <script type="text/javascript">
+    //Заголовок h2 меняет цвет
+
+    function kollaseks(){
+    $("h2").css("color", "yellow");
+    }
+
+    function mustaks(){
+      $("h2").css("color", "black");
+    }
+
+    function alusta(){
+      $("h2").mouseenter(kollaseks); //наведение мыши
+      $("h2").mouseleave(mustaks); //убирание мыши
+    }
+
+  </script>
+</head>
+<body onload="alusta()">
+<h2>JQuery kasutamine</h2>
+<div id="koht" style="position: relative; left: 100px; width: 200px;">
+<span>jQuery CDN kasutamine oma veebilehel</span>
+</div>
+<br>
+<input type="button" value="Paremale" onclick="$('#koht').animate({left:'300px'}, 2000)"/>
+
+<h2>Teksti värv miitib kui hiir liigutakse teksti peal</h2>
+</body>
+</html>

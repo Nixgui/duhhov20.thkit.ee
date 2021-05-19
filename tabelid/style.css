@@ -1,0 +1,188 @@
+#tabel1, #tabel1 td{
+    border: solid 1px green;
+    width: 30%;
+}
+#tabel2,#tabel2 td{
+    border: solid 1px green;
+    width: 30%;
+    height: 100px;
+    text-align: center;
+}
+#tabel3, #tabel3 td{
+    border: solid 1px green;
+    width: 30%;
+    height: 100px;
+    text-align: center;
+}
+#Eesti{
+    border-spacing: 0;
+    width: 330px;
+    height: 220px;
+    padding: 0;
+    border: solid 1px black;
+}
+#Eesti tr:nth-child(1){
+    background-color: blue;
+    height: 73px;
+}
+#Eesti tr:nth-child(2){
+    background-color: black;
+    height: 73px;
+}
+#Eesti tr:nth-child(3){
+    background-color: white;
+    height: 73px;
+}
+#Finland{
+    border-spacing: 0;
+    width: 330px;
+    height: 220px;
+    padding: 0;
+    border: solid 1px black;
+}
+#Finland tr:nth-child(1) td:nth-child(1), #Finland tr:nth-child(3) td:nth-child(1){
+    background-color: white;
+    height: 73px;
+    width: 70px;
+}
+#Finland tr:nth-child(1) td:nth-child(2), #Finland tr:nth-child(3) td:nth-child(2){
+    background-color: blue;
+    height: 73px;
+    width: 60px;
+}
+#Finland tr:nth-child(1) td:nth-child(3), #Finland tr:nth-child(3) td:nth-child(3){
+    background-color: white;
+    height: 73px;
+}
+#Finland tr:nth-child(2){
+    background-color: blue;
+    height: 73px;
+}
+#Kreeka{
+    border-spacing: 0;
+    width: 330px;
+    height: 220px;
+    padding: 0;
+    border: solid 1px black;
+}
+#Kreeka tr:nth-child(1) td:nth-child(1), #Kreeka tr:nth-child(1) td:nth-child(3){
+    background-color: blue;
+    height: 25px;
+    width: 30px;
+}
+#Kreeka tr:nth-child(2) td:nth-child(1), #Kreeka tr:nth-child(2) td:nth-child(3){
+    background-color: blue;
+    height: 25px;
+    width: 35px;
+}
+#Kreeka tr:nth-child(2) td:nth-child(2){
+    background-color: white;
+    height: 25px;
+    width: 30px;
+}
+#Kreeka tr:nth-child(3) td:nth-child(2){
+    background-color: blue;
+    height: 25px;
+}
+#Kreeka tr:nth-child(2) td:nth-child(1), #Kreeka tr:nth-child(2) td:nth-child(3){
+    background-color: blue;
+    height: 25px;
+    width: 30px;
+}
+#Kreeka tr:nth-child(4) td:nth-child(1), #Kreeka tr:nth-child(4) td:nth-child(3){
+    background-color: blue;
+    height: 25px;
+    width: 30px;
+}
+#Kreeka tr:nth-child(5) td:nth-child(1), #Kreeka tr:nth-child(5) td:nth-child(3){
+    background-color: blue;
+    height: 25px;
+    width: 30px;
+}
+#Kreeka tr:nth-child(7) td:nth-child(1){
+    background-color: blue;
+    height: 25px;
+}
+#Kreeka tr:nth-child(9) td:nth-child(1){
+    background-color: blue;
+    height: 25px;
+}
+#Switz{
+    border-spacing: 0;
+    width: 330px;
+    height: 220px;
+    padding: 0;
+    border: solid 1px black;
+    background-color: red;
+}
+#Switz tr:nth-child(2) td:nth-child(2){
+    background-color: white;
+    height: 44px;
+    width: 44px;
+}
+#Switz tr:nth-child(3) td:nth-child(2){
+    background-color: white;
+    height: 44px;
+    width: 44px;
+}
+#Switz tr:nth-child(4) td:nth-child(2){
+    background-color: white;
+    height: 44px;
+}
+#Germany{
+    border-spacing: 0;
+    width: 330px;
+    height: 220px;
+    padding: 0;
+    border: solid 1px black;
+}
+#Germany tr:nth-child(1){
+    background-color: black;
+    height: 73px;
+}
+#Germany tr:nth-child(2){
+    background-color: red;
+    height: 73px;
+}
+#Germany tr:nth-child(3){
+    background-color: yellow;
+    height: 73px;
+}
+#Latvia{
+    border-spacing: 0;
+    width: 330px;
+    height: 220px;
+    padding: 0;
+    border: solid 1px black;
+}
+#Latvia tr:nth-child(1){
+    background-color: red;
+    height: 90px;
+}
+#Latvia tr:nth-child(2){
+    background-color: white;
+
+}
+#Latvia tr:nth-child(3){
+    background-color: red;
+    height: 90px;
+}
+#Ukr{
+    border-spacing: 0;
+    width: 330px;
+    height: 220px;
+    padding: 0;
+    border: solid 1px black;
+}
+#Ukr tr:nth-child(1){
+    background-color: blue;
+
+}
+#Ukr tr:nth-child(2){
+    background-color: yellow;
+}
+footer{
+    background-color: #999999;
+    color: white;
+    padding: 10px;
+}

@@ -1,0 +1,29 @@
+
+#heroes{
+    border-color: red;
+}
+.superman{
+    text-align: center;
+    height: 350px;
+    width: 650px;
+}
+footer{
+    background-color: #999999;
+    color: white;
+    padding: 10px;
+}
+.batman{
+    text-align: right;
+    height: 230px;
+    width: 800px;
+}
+.flash{
+    text-align: left;
+    height: 230px;
+    width: 800px;
+}
+.ironman{
+    text-align: left;
+    height: 230px;
+    width: 800px;
+}

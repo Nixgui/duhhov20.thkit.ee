@@ -1,0 +1,135 @@
+h1{
+    text-align: center;
+    color: white;
+}
+body{
+    background-image: url("images/background.jfif");
+    width: 100%;
+    height: 100%;
+}
+header{
+    margin: 0;
+    overflow: hidden;
+    background: #061928;
+}
+#c {
+    opacity:.8;
+}
+canvas{
+    width: 100%;
+    height: 30%;
+    background: radial-gradient(ellipse at center, #242938, #000 100%);
+}
+
+.div{
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+
+}
+.div img{
+    width: 250px;
+    height: 200px;
+}
+.div .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 87px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+.div .button:hover{
+    background-color: blue;
+}
+#elina{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+
+}
+#aleksejevski{
+    opacity: 0.5;
+}
+#belov{
+    border-style: dashed;
+    border-width: 1px;
+    border-radius: 40px;
+}
+#bogdanov{
+    background-image: radial-gradient(green,red,yellow);
+}
+#bustik{
+
+}
+#duhhov{
+    animation-name: anim;
+    animation-duration: 2s;
+}
+@keyframes anim {
+    from{background-color: white;}
+    to{background-color: red;}
+}
+#gabitov{
+
+}
+#gabitov img{
+    width: 200px;
+    border-radius: 100%;
+}
+#gudrijanov{
+
+    border-style: double;
+    border-width: 4px;
+    border-radius: 10px;
+}
+#jevdokimova{
+
+}
+#jevdokimova .button{
+    background-color: red;
+}
+#karpova{
+    border-style: inset;
+    border-radius: 10px;
+}
+#kasuba{
+
+}
+#kasuba .button:hover{
+    background-color: darkblue;
+}
+#kolossova{
+
+}
+#kolossova:hover{
+    opacity: 0.5;
+    width: 250px;
+}
+#ljah{
+
+    outline-style: solid;
+    outline-color: blue;
+    outline-width: 10px;
+}
+#makarov{
+
+    font-family: "Comic Sans MS";
+}
+#mihhailov{
+
+}
+#nikolajev{
+
+}
+#orman{
+
+}
+#skredov{
+
+}
+#pjemeljanov{
+
+}

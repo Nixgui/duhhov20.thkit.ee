@@ -1,4 +1,4 @@
-let kellekord = "Krest.png"
+let kellekord = "Krest.png";
 let lopp=false;
 
 //Основная функция
@@ -30,11 +30,11 @@ function hiireVajutus(pilt)
 		kellekord="Krest.png"
 	}
 }
-/*function pildiValik(pilt)
+function pildiValik(pilt)
 {
 	kellekord=pilt.src;
 	document.getElementById("pilt13").src=kellekord;
-}*/
+}
 
 //split("/") - делает массив из пути к файлу
 //pop() - Отделает последнее значение или имя файла

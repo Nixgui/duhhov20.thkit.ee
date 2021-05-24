@@ -1,24 +1,65 @@
-const dragstart = function (event){
-	event.dataTransfer.setData("text",event.target.id)
-};
-const dragover = function (event){
-	if(event.target.nodeName.toLowerCase() === "img"){
+let images = "blank.jpg";
+let end = false;
+
+//Смена картинки
+function changeImage(pilt)
+{
+	if(end)
+	{
+		pildid=document.images;
+		for(let i=0; i<pildid.length;i++)
+		{
+			pildid[i].src="blank.jpg"
+		}
+		end=false
+	}
+	pilt.src=images;
+
+	if(images === "blank.jpg")
+	{
+		images = "p" + failName();
+	}
+	if(control())
+	{
+		alert("You Win!")
+		end = true;
+	}
+	else
+	{
+		end = false;
+	}
+
+}
+
+//смена картинки которую ты выбрал
+function imageChange(pilt)
+{
+	images=pilt.src;
+	document.getElementById("changed").src=images;
+
+}
+
+//Получает номер картинки
+function failName(nr)
+{
+	let name = document.getElementById("pilt" + nr).src;
+	name=name.split("/").pop();
+	return name;
+}
+
+//обрезка ид
+function idNameControl(nr)
+{
+	let name = document.getElementById("p" + nr).id;
+	name = name.split("/").pop();
+	return name;
+}
+
+//Пробник проверки
+function control()
+{
+	if(failName() === idNameControl())
+	{
 		return true;
 	}
-	event.preventDefault();
-}
-const drop = function (event){
-	event.preventDefault();
-	let imageId = event.dataTransfer.getData("text");
-	event.target.appendChild(document.getElementById(imageId))
-};
-
-const cells = document.getElementsByClassName("col");
-Array.from(cells).forEach(element) => {
-	element.addEventListener('dragover', dragover);
-	element.addEventListener('drop', drop);
-}
-const images = document.getElementsByTagName("img");
-Array.from(images).forEach(element) => {
-	element.addEventListener('dragstart', dragstart);
 }

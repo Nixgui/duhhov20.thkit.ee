@@ -1,32 +1,24 @@
-let images = "blank.jpg";
-let end = false;
-
+let pictures = "blank.jpg"
+end = false;
+let tic = 0;
+let idStr = document.id;
 //Смена картинки
 function changeImage(pilt)
 {
-	if(end)
+	pilt.src=pictures;
+	if(vyiduKontroll(tic) === 4)
 	{
-		pildid=document.images;
-		for(let i=0; i<pildid.length;i++)
-		{
-			pildid[i].src="blank.jpg"
-		}
-		end=false
-	}
-	pilt.src=images;
-
-	if(images === "blank.jpg")
-	{
-		images = "p" + failName();
-	}
-	if(control())
-	{
-		alert("You Win!")
 		end = true;
 	}
-	else
+	if(end === true)
 	{
-		end = false;
+		alert("Win!")
+	}
+
+
+	if(pictures === "blank.jpg")
+	{
+		pictures = "p" + failName();
 	}
 
 }
@@ -34,8 +26,17 @@ function changeImage(pilt)
 //смена картинки которую ты выбрал
 function imageChange(pilt)
 {
-	images=pilt.src;
-	document.getElementById("changed").src=images;
+	pictures=pilt.src;
+	document.getElementById("changed").src=pictures;
+	if(end)
+	{
+		pildid=document.images;
+		for(let i=0; i<pildid.length;i++)
+		{
+			pildid[i].src="blank.jpg"
+		}
+		end=false;
+	}
 
 }
 
@@ -47,19 +48,22 @@ function failName(nr)
 	return name;
 }
 
-//обрезка ид
-function idNameControl(nr)
+function kontrollSisu(a,b,c,d,failinimilopp)
 {
-	let name = document.getElementById("p" + nr).id;
-	name = name.split("/").pop();
-	return name;
+	return failName(a) === failinimilopp && failName(b) === failinimilopp && failName(c) === failinimilopp && failName(d) === failinimilopp;
 }
 
-//Пробник проверки
-function control()
-{
-	if(failName() === idNameControl())
-	{
-		return true;
+//Проверка выйграл ли.
+/*function vyiduKontroll(tic) {
+	if (kontrollSisu(1, 2, 3, 4, pictures) && kontrollSisu(5, 6, 7, 8, pictures) && kontrollSisu(9, 10, 11, 12, pictures) && kontrollSisu(13, 14, 15, 16, pictures)) {
+		tic = tic + 1;
+		return tic;
 	}
+}*/
+
+function vyiduKontroll(tic){
+	if(failName(1)==="p1.jpg" && failName(2)==="p2.jpg"){
+		tic = tic+1;
+	}
+	return tic;
 }

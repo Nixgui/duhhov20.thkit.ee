@@ -343,3 +343,18 @@ function lego_face()
 		ctx.stroke();
 	}
 }
+function drawAll()
+{
+	lego_body();
+	lego_head();
+	left_hand();
+	left_hand_hook();
+	right_hand();
+	right_hand_hook();
+	left_leg();
+	right_leg();
+	left_hand_shadow();
+	right_hand_shadow();
+	belt();
+	lego_face();
+}

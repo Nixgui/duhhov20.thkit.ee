@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Valuuta kalkulaator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<header>
+  <h1>Valuuta kalkulaator</h1>
+</header>
+<main>
+  <form>
+    Sisesta number ja vali valuuta:
+    <br>
+
+    <input type="number" id="inputnumber" min="0">euro
+
+      <input type="radio" id="dollar" name="currency" value="dollar" onchange="changeEvent(event)">
+      <label for="dollar">dollar</label>
+      <input type="radio" id="sek" name="currency" value="sek" onchange="changeEvent(event)">
+      <label for="sek">SEK</label>
+      <input type="radio" id="rouble" name="currency" value="rouble" onchange="changeEvent(event)">
+      <label for="rouble">rouble</label>
+      <input type="radio" id="pound" name="currency" value="pound" onchange="changeEvent(event)">
+      <label for="pound">pound</label>
+    <div id="answer"></div>
+    <img src="img/tundmatu.jpg" alt="image" id="img">
+  </form>
+</main>
+<script src="kal.js"></script>
+</body>
+</html>
